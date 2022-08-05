@@ -1,55 +1,46 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTD-8">
-		<meta name="description" content="This a good website">
-		<title>Bhanuka's website</title>
-	</head>
-	<body style="background-color: pink;">
-		<header>
-			<nav>
-				
-			</nav>
-
-		</header>
-		<main>
-			<hr/>
-			<h1 style="color:green; background-color: yellow;">Bhanuka's website</h1>
-			<br/>
-			<hr/>
-			<h2>
-				<a href="worry.html">A guide to worrying</a>
-			</h2>
-			
-			<section>
-				what is going with this section
-			</section>
-
-			<a href="https://www.google.com"><h1>Googles's homepage</h1></a>
-			<a href="https://www.google.com"target="_blank"><h2>google homepage new tab</h2></a>
-
-			<a href="page2.html">page 2</a>
-			</p>
-			<!--<a href="dir1/page3.html">page 3</a>-->
-			</p>
-			<a href="video.html">video page</a>
-		</p>
-			<a href="list.html">list and tables</a></p>
-			<a href="input.html">inputs</a>
-
-
-
-
-			<!--suck this code-->
-			<p style="color: red; background-color:blue;">this is a beautifull pharagraph</p>
-
-			<p>H<sub>2</sub>0</p>
-
-		</main>
-		<footer>
-			
-		</footer>
-		
-	</body>
-
+<head>
+<title>
+   heart beat
+</title>
+</head>
+  <style>
+   body{
+      background-color:black;
+     }
+   .heart{
+       top:100px;
+       left:140px;
+       position:relative;
+       width:130px;
+       height:200px;
+       background-color:red;
+       /*top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);*/
+       border-radius:200px 200px 0 200px;
+       transform:rotate(45deg);
+       box-shadow:0px 0px 40px red;
+       animation: scale 1s linear infinite;
+      }
+      .heart::before{
+      content:"";
+      position:absolute;
+      width:130px;
+      height:200px;
+      background-color:red;
+      border-radius:200px 200px 0 200px;
+      transform:rotate(-90deg);
+      left:-35px;
+      top:30px;
+      box-shadow: 0px 0px 40px red;
+      }
+      keyframes scale{
+         50%{
+           transfrom: rotate(45deg);}
+      }  
+  </style>
+<body>
+   <div class="heart"></div>
+</body>
 </html>
