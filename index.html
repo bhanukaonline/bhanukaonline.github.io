@@ -4,52 +4,99 @@
 		<meta charset="UTD-8">
 		<meta name="description" content="This a good website">
 		<title>Bhanuka's website</title>
+		 <style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.header nav{
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				margin: 0 auto;
+			}
+			.header nav h1{
+				font-size: 25px;
+				color : rgb(255, 0, 115);
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				padding: 10px 15px;
+			}
+			.header ul{
+				display: flex;
+			}
+			.header ul li{
+				display: flex;
+				list-style: none;
+				padding: 15px 15px;
+			}
+			.header li a{
+				text-decoration: none;
+				color: white;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 15px;
+				transition: .5s all;
+			}
+			.header li a:hover{
+				color: rgb(0, 255, 183);
+			}
+           /* HOME */
+		   .home{
+			  width: fit-content;
+			  margin: auto;
+			  padding-top: 170px ;
+
+		   }
+		   .home h1{
+			   color: crimson;
+			   font-size: 100px;
+               font-family:Georgia, 'Times New Roman', Times, serif;
+			   animation: scale 1s linear infinite;
+		   }
+		   @keyframes scale{
+			  50%{
+				transform: rotate(-5deg)
+			  }
+			  50%{
+				transform: rotate(-7deg)
+			  }
+		   }
+		   .line{
+			   width: 100%;
+			   height: 15px;
+			   background-color: antiquewhite;
+		   }
+			
+		 </style>
 	</head>
-	<body style="background-color: pink;">
-		<header>
+	<body style="background-color: black;">
+	
+		<div class="header">
 			<nav>
-				
+				<h1>BHANUKA</h1>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT ME</a></li>
+					<li><a href="">PROJECT</a></li>
+					<li><a href="">CONTACT ME</a></li>
+				</ul>
 			</nav>
-
-		</header>
-		<main>
-			<hr/>
-			<h1 style="color:green; background-color: yellow;">Bhanuka's website</h1>
-			<br/>
-			<hr/>
-			<h2>
-				<a href="worry.html">A guide to worrying</a>
-			</h2>
+       </div>
 			
-			<section>
-				what is going with this section
-			</section>
-
-			<a href="https://www.google.com"><h1>Googles's homepage</h1></a>
-			<a href="https://www.google.com"target="_blank"><h2>google homepage new tab</h2></a>
-
-			<a href="page2.html">page 2</a>
-			</p>
-			<!--<a href="dir1/page3.html">page 3</a>-->
-			</p>
-			<a href="video.html">video page</a>
-		</p>
-			<a href="list.html">list and tables</a></p>
-			<a href="input.html">inputs</a>
-
-
-
-
-			<!--suck this code-->
-			<p style="color: red; background-color:blue;">this is a beautifull pharagraph</p>
-
-			<p>H<sub>2</sub>0</p>
-
-		</main>
-		<footer>
-			
-		</footer>
-		
+	   <div class="home">
+		   <h1 id="text" onmousemove="Change()" onmouseleave="change()">BHANUKA</h1>
+		   <div class="line"></div>
+	   </div>
+	    
+	   <script>
+		   let text = document.getElementById('text');
+		   function Change(){
+			   text.innerHTML = 'WELCOME';
+		   }
+		   function change(){
+			   text.innerHTML = 'BHANUKA';
+		   }
+	   </script>
 	</body>
 
 </html>
